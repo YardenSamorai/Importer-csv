@@ -3,6 +3,7 @@ import DashboardLayout from '../components/DashboardLayout';
 import DashboardCard from '../components/DashboardCard';
 import { Check, ArchiveRestore, X } from 'lucide-react';
 import CsvImport from "../components/CsvImport.js";
+import DashboardLogs from "../components/DashboardLogs.js";
 
 const Dashboard = () => {
 
@@ -61,6 +62,7 @@ const Dashboard = () => {
         />
       </div>
       <CsvImport handleFileChange={handleFileChange} handleImportClick={handleImportClick} />
+      <DashboardLogs />
     </DashboardLayout>
   );
 };
