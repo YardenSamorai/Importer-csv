@@ -1,4 +1,4 @@
-import { LayoutDashboard, NotebookText, ShoppingBag, Settings } from 'lucide-react';
+import { LayoutDashboard, NotebookText, ShoppingBag, Settings, RefreshCcw } from 'lucide-react';
 
 export const sidebarRoutes = [
     {
@@ -17,9 +17,15 @@ export const sidebarRoutes = [
       icon:<ShoppingBag />,
     },
     {
+      path: '/syncinventory',
+      label: 'Sync Inventory',
+      icon:<RefreshCcw />,
+  },
+    {
         path: '/Settings',
         label: 'Settings',
         icon:<Settings />,
     },
+
   ];
   

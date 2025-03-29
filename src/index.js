@@ -7,6 +7,7 @@ import { ClerkProvider } from '@clerk/clerk-react';
 import { BrowserRouter } from 'react-router-dom';
 import { MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
+import { Toaster } from 'react-hot-toast'; // ✅ חדש
 
 const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
@@ -17,6 +18,7 @@ root.render(
       <MantineProvider withGlobalStyles withNormalizeCSS>
         <BrowserRouter>
           <App />
+          <Toaster position="top-center" reverseOrder={false} /> {/* ✅ חדש */}
         </BrowserRouter>
       </MantineProvider>
     </ClerkProvider>
