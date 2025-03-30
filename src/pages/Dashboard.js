@@ -61,6 +61,7 @@ const Dashboard = () => {
     }
   };
 
+  // Sending Request to get amount of live product. 
   const fetchLiveProductCount = async () => {
     try {
       const res = await fetch("http://localhost:4000/api/inventory/count");
